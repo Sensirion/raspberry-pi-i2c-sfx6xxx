@@ -32,10 +32,10 @@ Use the following pins to connect your SFX6XXX:
 
 | *SFX6XXX* | *Cable Color*  |   *Raspberry Pi*   |
 | :----------------: | -------------- | ------------------ |
-| VDD | red | Pin 
+| VDD | red | Pin
 | GND | black | Pin 6
 | SCL | yellow | Pin 5
-| ADDR | purple | Pin 
+| ADDR | purple | Pin
 | SDA | green | Pin 3
 
 
@@ -49,11 +49,11 @@ Use the following pins to connect your SFX6XXX:
 | *Pin* | *Cable Color* | *Name* | *Description*  | *Comments* |
 |-------|---------------|:------:|----------------|------------|
 | 1 | red | VDD | Supply Voltage | +24V
-| 2 | black | GND | Ground | 
-| 3 |  | NC | Do not connect | 
-| 4 | yellow | SCL | I2C: Serial clock input | 
+| 2 | black | GND | Ground |
+| 3 |  | NC | Do not connect |
+| 4 | yellow | SCL | I2C: Serial clock input |
 | 5 | purple | ADDR |  | Leave floating for default i2c address 0x24
-| 6 | green | SDA | I2C: Serial data input / output | 
+| 6 | green | SDA | I2C: Serial data input / output |
 
 
 
@@ -63,9 +63,9 @@ Use the following pins to connect your SFX6XXX:
 - [Enable the I²C interface in the raspi-config](https://www.raspberrypi.org/documentation/configuration/raspi-config.md)
 - Download the SFX6XXX driver from [Github](https://github.com/Sensirion/raspberry-pi-i2c-sfx6xxx) and extract the `.zip` on your Raspberry Pi
 - Connect the SFX6XXX sensor as explained in the [section above](#connect-the-sensor)
-- - The provided example is working with a SFC6000, I²C address 0x24.
+- The provided example is working with a SFC6000, I²C address 0x24.
   In order to use the code with another product or I²C address you need to change it in the call sfx6xxx_init(ADDRESS) in
-  `sfx6xxx_i2c_example_usage.c`. The list of supported I²C-addresses is found in the header 
+  `sfx6xxx_i2c_example_usage.c`. The list of supported I²C-addresses is found in the header
   `sfx6xxx_i2c.h`.
 
 - Compile the driver
