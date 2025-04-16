@@ -109,8 +109,8 @@ If you run `./sfx6xxx_i2c_example_usage` but do not get sensor readings but some
 
 ```
 Error executing read_product_identifier(): -1
-Error executing start_o2_continuous_measurement(): -1
-Error executing read_flow(): -1
+Error executing stop_continuous_measurement(): -1
+Error executing start_air_continuous_measurement(): -1
 ...
 ```
 then go through the below troubleshooting steps.
@@ -162,12 +162,6 @@ $ sudo vi local.rules
 ## Contributing
 
 **Contributions are welcome!**
-
-We develop and test this driver using our company internal tools (version
-control, continuous integration, code review etc.) and automatically
-synchronize the master branch with GitHub. But this doesn't mean that we don't
-respond to issues or don't accept pull requests on GitHub. In fact, you're very
-welcome to open issues or create pull requests :)
 
 This Sensirion library uses
 [`clang-format`](https://releases.llvm.org/download.html) to standardize the
